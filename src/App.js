@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 // import Bike from "./Bike";
 // import Car from "./Car";
 import Example from "./Example";
@@ -12,11 +12,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Blog from "./Blog";
 import Contact from "./Contact";
 import Home from "./Home";
+import Coma from "./Coma";
 
-
-
+const BioData = createContext();
 
 const App = () => {
+  
+
   const [count, setCount] = useState(0)
   const [age, setAge] = useState(23)
 
@@ -78,6 +80,10 @@ const App = () => {
 
         </Router>
 
+        <BioData.Provider value={"ajay"}>
+          <Coma />
+        </BioData.Provider>
+
 
     </div>
 
@@ -85,3 +91,4 @@ const App = () => {
 }
 
 export default App
+export {BioData}
