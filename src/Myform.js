@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
 
-
 const Myform = () => {
     const [name, setName ] = useState("")
 
     const dataChange = (e) => {
-        setName(name + 1)
+        setName(e.target.value)
     }
     return(
         <form>
