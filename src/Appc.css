@@ -1,0 +1,17 @@
+
+.App{
+    color: blue;
+}
+
+/* .quantity{
+    background-color: brown;
+} */
+.quantity_plus{
+    background: brown;
+}
+.quantity_minus{
+    background: brown;
+}
+.redux{
+    width: 50px;
+}
